@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
+
+  <div style="max-width: 500px; margin: 50px auto; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #007BFF;">Contact Us</h2>
+    
+    <form action="https://formspree.io/f/movknvol" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required
+             style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required
+             style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required
+             style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here" required
+                style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: vertical;"></textarea>
+
+      <button type="submit" 
+              style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
+        Submit
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
